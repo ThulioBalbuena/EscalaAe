@@ -1,0 +1,35 @@
+[
+  { "id": "p01", "name": "Caíque França",    "club": "Flamengo",       "position": "GOL", "number": 1  },
+  { "id": "p02", "name": "Muriel",           "club": "Fluminense",     "position": "GOL", "number": 1  },
+  { "id": "p03", "name": "Everson",          "club": "Atlético-MG",    "position": "GOL", "number": 1  },
+  { "id": "p04", "name": "Léo Jardim",       "club": "Vasco",          "position": "GOL", "number": 1  },
+
+  { "id": "p05", "name": "Léo Pereira",      "club": "Flamengo",       "position": "DEF", "number": 4  },
+  { "id": "p06", "name": "Fabrício Bruno",   "club": "Flamengo",       "position": "DEF", "number": 3  },
+  { "id": "p07", "name": "Nino",             "club": "Fluminense",     "position": "DEF", "number": 5  },
+  { "id": "p08", "name": "Marlon",           "club": "Fluminense",     "position": "DEF", "number": 6  },
+  { "id": "p09", "name": "Guilherme Arana",  "club": "Atlético-MG",    "position": "DEF", "number": 6  },
+  { "id": "p10", "name": "Robson Bambu",     "club": "Corinthians",    "position": "DEF", "number": 4  },
+  { "id": "p11", "name": "Cacá",             "club": "Corinthians",    "position": "DEF", "number": 3  },
+  { "id": "p12", "name": "Zé Ivaldo",        "club": "Fluminense",     "position": "DEF", "number": 2  },
+  { "id": "p13", "name": "Lucas Veríssimo",  "club": "Santos",         "position": "DEF", "number": 5  },
+  { "id": "p14", "name": "Danilo",           "club": "Flamengo",       "position": "DEF", "number": 13 },
+
+  { "id": "p15", "name": "Gerson",           "club": "Flamengo",       "position": "MEI", "number": 8  },
+  { "id": "p16", "name": "De La Cruz",       "club": "Flamengo",       "position": "MEI", "number": 18 },
+  { "id": "p17", "name": "André",            "club": "Fluminense",     "position": "MEI", "number": 7  },
+  { "id": "p18", "name": "Martinelli",       "club": "Atlético-MG",    "position": "MEI", "number": 5  },
+  { "id": "p19", "name": "Raphael Veiga",    "club": "Palmeiras",      "position": "MEI", "number": 23 },
+  { "id": "p20", "name": "Rômulo",           "club": "Vasco",          "position": "MEI", "number": 8  },
+  { "id": "p21", "name": "Rodrigo Garro",    "club": "Corinthians",    "position": "MEI", "number": 8  },
+  { "id": "p22", "name": "Gustavo Nescau",   "club": "Bahia",          "position": "MEI", "number": 10 },
+  { "id": "p23", "name": "Thiago Maia",      "club": "Internacional",  "position": "MEI", "number": 6  },
+
+  { "id": "p24", "name": "Pedro",            "club": "Flamengo",       "position": "ATA", "number": 9  },
+  { "id": "p25", "name": "Estêvão",          "club": "Palmeiras",      "position": "ATA", "number": 41 },
+  { "id": "p26", "name": "Germán Cano",      "club": "Fluminense",     "position": "ATA", "number": 14 },
+  { "id": "p27", "name": "Hulk",             "club": "Atlético-MG",    "position": "ATA", "number": 7  },
+  { "id": "p28", "name": "Yuri Alberto",     "club": "Corinthians",    "position": "ATA", "number": 9  },
+  { "id": "p29", "name": "Luiz Adriano",     "club": "Santos",         "position": "ATA", "number": 10 },
+  { "id": "p30", "name": "Vegetti",          "club": "Vasco",          "position": "ATA", "number": 99 }
+]

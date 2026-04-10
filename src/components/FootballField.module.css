@@ -1,0 +1,84 @@
+.field {
+  position: relative;
+  width: 380px;
+  height: 540px;
+  background: linear-gradient(180deg,
+    #166534 0%, #15803d 12.5%,
+    #166534 12.5%, #166534 25%,
+    #15803d 25%, #15803d 37.5%,
+    #166534 37.5%, #166534 50%,
+    #15803d 50%, #15803d 62.5%,
+    #166534 62.5%, #166534 75%,
+    #15803d 75%, #15803d 87.5%,
+    #166534 87.5%, #166534 100%
+  );
+  border: 3px solid rgba(255,255,255,0.6);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.centerLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.5);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.centerCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.penaltyAreaTop {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 70px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-top: none;
+  pointer-events: none;
+}
+
+.penaltyAreaBottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 70px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-bottom: none;
+  pointer-events: none;
+}
+
+.rows {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 16px 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
