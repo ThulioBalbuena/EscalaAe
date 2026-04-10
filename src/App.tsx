@@ -105,15 +105,15 @@ export default function App() {
           </div>
 
           {/* Ações */}
-          <button className={styles.clearBtn} onClick={handleClear}>
+          <button className={`${styles.clearBtn} ${filled === 0 ? styles.disabled : ''}`} onClick={handleClear} disabled={filled === 0}>
             🗑 Limpar
           </button>
           <button
             className={`${styles.exportBtn} ${!exportable ? styles.disabled : ''}`}
             onClick={handleExport}
-            disabled={exportLoading}
+            disabled={!exportable || exportLoading}
           >
-            {exportLoading ? '⏳ Exportando...' : '📸 Exportar PNG'}
+            {exportLoading ? '⏳ Exportando...' : ' Exportar PNG'}
           </button>
         </div>
       </header>
