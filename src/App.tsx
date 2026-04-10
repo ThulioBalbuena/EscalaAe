@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+﻿import { useState, useRef } from 'react'
 import { toPng } from 'html-to-image'
 import type { FormationType, Player } from './types'
 import { useLineup } from './hooks/useLineup'
@@ -82,7 +82,7 @@ export default function App() {
         <div className={styles.headerLeft}>
           <span className={styles.logo}>⚽</span>
           <div>
-            <h1 className={styles.title}>Brasileirão 2026</h1>
+            <h1 className={styles.title}>Champions League 2026!</h1>
             <p className={styles.subtitle}>Monte seu time ideal</p>
           </div>
         </div>
