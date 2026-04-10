@@ -14,7 +14,7 @@ concurrency:
 jobs:
   # JOB 1 – teste
   test:
-    name: 🧪 Testes Unitários
+    name: Testes Unitários
     runs-on: ubuntu-latest
 
     steps:
@@ -47,7 +47,7 @@ jobs:
   # JOB 2 – build
   # Só roda se o job "test" passou. Gera o pacote de produção via Vite.
   build:
-    name: 🏗️ Build de Produção
+    name: Build de Produção
     runs-on: ubuntu-latest
     needs: test          
 
@@ -76,7 +76,7 @@ jobs:
 
   # JOB 3 – notificacao 
   notify:
-    name: 📧 Notificação por E-mail
+    name: Notificação por E-mail
     runs-on: ubuntu-latest
     needs: test          
     if: always()      
@@ -108,7 +108,7 @@ jobs:
 
   # JOB 4 – deploy no pages
   deploy:
-    name: 🚀 Deploy – GitHub Pages
+    name: Deploy – GitHub Pages
     runs-on: ubuntu-latest
     needs: build         
 
