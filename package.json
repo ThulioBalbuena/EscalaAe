@@ -1,7 +1,7 @@
 {
   "name": "EscalaAe",
   "version": "1.0.0",
-  "description": "Monte seu time do Brasileirão Série A 2026",
+  "description": "Monte seu time da Champions League 2026",
   "type": "module",
   "scripts": {
     "dev": "vite",
