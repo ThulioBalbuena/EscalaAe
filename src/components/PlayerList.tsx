@@ -14,14 +14,18 @@ const POSITIONS: Array<Position | 'TODOS'> = ['TODOS', 'GOL', 'DEF', 'MEI', 'ATA
 
 export function PlayerList({ players, selectedPlayer, slots, onSelect }: Props) {
   const [filter, setFilter] = useState<Position | 'TODOS'>('TODOS')
+  const [clubFilter, setClubFilter] = useState('TODOS')
   const [search, setSearch] = useState('')
 
   const usedIds = new Set(slots.filter((s) => s.player).map((s) => s.player!.id))
 
+  const clubs = ['TODOS', ...Array.from(new Set(players.map((p) => p.club))).sort()]
+
   const filtered = players.filter((p) => {
     const matchPos = filter === 'TODOS' || p.position === filter
+    const matchClub = clubFilter === 'TODOS' || p.club === clubFilter
     const matchSearch = p.name.toLowerCase().includes(search.toLowerCase())
-    return matchPos && matchSearch
+    return matchPos && matchClub && matchSearch
   })
 
   return (
@@ -49,10 +53,24 @@ export function PlayerList({ players, selectedPlayer, slots, onSelect }: Props) 
         ))}
       </div>
 
+      <select
+        className={styles.select}
+        value={clubFilter}
+        onChange={(e) => setClubFilter(e.target.value)}
+        aria-label="Filtrar por clube"
+      >
+        {clubs.map((club) => (
+          <option key={club} value={club}>
+            {club}
+          </option>
+        ))}
+      </select>
+
       <div className={styles.list}>
         {filtered.length === 0 && (
           <p className={styles.empty}>Nenhum jogador encontrado.</p>
         )}
+
         {filtered.map((player) => (
           <div key={player.id} className={usedIds.has(player.id) ? styles.used : ''}>
             <PlayerCard
